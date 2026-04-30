@@ -1,0 +1,307 @@
+export interface Certification {
+    id: string;
+    title: string;
+    issuer: string;
+    category: "cybersecurity" | "cloud" | "ai-data" | "development" | "industry-training";
+    skills: string[];
+    fileName: string;
+    verifyUrl?: string;
+    icon: string;
+}
+
+export const certifications: Certification[] = [
+    // Cybersecurity
+    {
+        id: "ibm-qradar-siem",
+        title: "IBM QRadar SIEM Foundation",
+        issuer: "IBM",
+        category: "cybersecurity",
+        skills: ["SIEM", "QRadar", "Log Analysis", "Threat Detection"],
+        fileName: "ibm qradar siem foundation.pdf",
+        icon: "shield",
+    },
+    {
+        id: "ibm-incident-response",
+        title: "Incident Response and Systems Forensics",
+        issuer: "IBM SkillsBuild",
+        category: "cybersecurity",
+        skills: ["Incident Response", "Systems Forensics", "Security Operations"],
+        fileName: "ibm incident response.pdf",
+        icon: "alertTriangle",
+    },
+    {
+        id: "ibm-vulnerability-management",
+        title: "Vulnerability Management",
+        issuer: "IBM SkillsBuild",
+        category: "cybersecurity",
+        skills: ["Vulnerability Management", "Risk Assessment", "Security Analysis"],
+        fileName: "IBMDesign20260118-32-mvthny.pdf",
+        icon: "shieldAlert",
+    },
+    {
+        id: "ibm-enterprise-security",
+        title: "Enterprise Security in Practice",
+        issuer: "IBM SkillsBuild",
+        category: "cybersecurity",
+        skills: ["Enterprise Security", "Security Architecture", "Security Operations"],
+        fileName: "ibm yay.pdf",
+        icon: "lock",
+    },
+    {
+        id: "cisco-network-defense",
+        title: "Network Defense",
+        issuer: "Cisco Networking Academy",
+        category: "cybersecurity",
+        skills: ["Network Security", "Defense Strategies", "Firewall Management"],
+        fileName: "cisco network defense.pdf",
+        icon: "lock",
+    },
+    {
+        id: "network-defense-update",
+        title: "Network Defense (Course Completion)",
+        issuer: "Cisco Networking Academy",
+        category: "cybersecurity",
+        skills: ["Network Security", "Intrusion Detection", "Security Monitoring"],
+        fileName: "NetworkDefenseUpdate.pdf",
+        icon: "globe",
+    },
+    {
+        id: "cpps",
+        title: "Certified Phishing Prevention Specialist (CPPS)",
+        issuer: "Hack & Fix",
+        category: "cybersecurity",
+        skills: ["Phishing Prevention", "Email Security", "Social Engineering Defense"],
+        fileName: "CPPS.pdf",
+        icon: "shieldAlert",
+    },
+
+    // Cloud
+    {
+        id: "aws-cloud-practitioner",
+        title: "AWS Cloud Practitioner",
+        issuer: "Amazon Web Services",
+        category: "cloud",
+        skills: ["AWS", "Cloud Computing", "Cloud Architecture"],
+        fileName: "AWS Cloud Practitioner.pdf",
+        icon: "cloud",
+    },
+    {
+        id: "aws-security-best-practices",
+        title: "AWS Security Best Practices",
+        issuer: "Amazon Web Services",
+        category: "cloud",
+        skills: ["AWS Security", "IAM", "VPC", "WAF"],
+        fileName: "AWS Security Best Practices.pdf",
+        icon: "shieldCheck",
+    },
+    {
+        id: "aws-security-fundamentals",
+        title: "AWS Security Fundamentals",
+        issuer: "Amazon Web Services",
+        category: "cloud",
+        skills: ["Cloud Security", "AWS Fundamentals", "Security Services"],
+        fileName: "AWS Security Fundamentals Second Edition.pdf",
+        icon: "construction",
+    },
+    {
+        id: "aws-security-observability",
+        title: "Security & Observability on AWS",
+        issuer: "Amazon Web Services",
+        category: "cloud",
+        skills: ["Observability", "Monitoring", "Security Analytics"],
+        fileName: "Security and Observability AWS.pdf",
+        icon: "barChart",
+    },
+    {
+        id: "google-cloud-network",
+        title: "Google Cloud Network Skill Badge",
+        issuer: "Google Cloud",
+        category: "cloud",
+        skills: ["Google Cloud", "Cloud Networking", "VPC"],
+        fileName: "develop-your-google-cloud-network-skill-badge.png",
+        icon: "globe",
+    },
+    {
+        id: "data-engineering-aws",
+        title: "Data Engineering on AWS",
+        issuer: "Amazon Web Services",
+        category: "cloud",
+        skills: ["Data Engineering", "ETL", "AWS Data Services"],
+        fileName: "DATA engineering.pdf",
+        icon: "radio",
+    },
+
+    // AI & Data
+    {
+        id: "ai-engineer",
+        title: "AI Engineer Certificate",
+        issuer: "Professional Certification",
+        category: "ai-data",
+        skills: ["AI Engineering", "Machine Learning", "Model Deployment"],
+        fileName: "AI Engineer-Certificate.pdf",
+        icon: "flaskConical",
+    },
+    {
+        id: "ai-data-scientist",
+        title: "AI and Data Scientist Certificate",
+        issuer: "Professional Certification",
+        category: "ai-data",
+        skills: ["Data Science", "AI", "Statistical Analysis"],
+        fileName: "AI and Data Scientist-Certificate.pdf",
+        icon: "trendingUp",
+    },
+    {
+        id: "data-analyst",
+        title: "Data Analyst Certificate",
+        issuer: "Professional Certification",
+        category: "ai-data",
+        skills: ["Data Analysis", "Visualization", "Statistical Methods"],
+        fileName: "Data Analyst-Certificate.pdf",
+        icon: "trendingDown",
+    },
+    {
+        id: "tata-data-viz",
+        title: "Tata Data Visualisation",
+        issuer: "Tata",
+        category: "ai-data",
+        skills: ["Data Visualization", "Business Intelligence", "Analytics"],
+        fileName: "tata data visualisation.pdf",
+        icon: "barChart",
+    },
+
+    // Development
+    {
+        id: "frontend-dev",
+        title: "Frontend Development Certificate",
+        issuer: "Professional Certification",
+        category: "development",
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        fileName: "Frontend Development-Certificate.pdf",
+        icon: "palette",
+    },
+    {
+        id: "lets-bootstrap",
+        title: "Bootstrap Development",
+        issuer: "Let's Upgrade",
+        category: "development",
+        skills: ["Bootstrap", "Responsive Design", "CSS Frameworks"],
+        fileName: "lets bootstrap.pdf",
+        icon: "smartphone",
+    },
+    {
+        id: "lets-java",
+        title: "Java Bootcamp",
+        issuer: "Let's Upgrade",
+        category: "development",
+        skills: ["Java", "OOP", "Data Structures"],
+        fileName: "LUEJAVAAPR1251183.pdf",
+        icon: "coffee",
+    },
+    {
+        id: "lets-dsa-java",
+        title: "DSA with Java Bootcamp",
+        issuer: "Let's Upgrade",
+        category: "development",
+        skills: ["DSA", "Java", "Algorithms", "Data Structures"],
+        fileName: "LUEDSAMAY125996.pdf",
+        icon: "code",
+    },
+    {
+        id: "lets-tailwind",
+        title: "Tailwind CSS Bootcamp",
+        issuer: "Let's Upgrade",
+        category: "development",
+        skills: ["Tailwind CSS", "CSS", "Responsive Design"],
+        fileName: "LUETCJUN125520.pdf",
+        icon: "palette",
+    },
+    {
+        id: "mongodb-cert",
+        title: "MongoDB Bootcamp",
+        issuer: "Let's Upgrade",
+        category: "development",
+        skills: ["MongoDB", "NoSQL", "Database Design"],
+        fileName: "LUEMDBMAY1251035.pdf",
+        icon: "database",
+    },
+    {
+        id: "lets-gemini",
+        title: "Gemini AI Development",
+        issuer: "Google",
+        category: "development",
+        skills: ["Gemini AI", "API Integration", "AI Applications"],
+        fileName: "lets gemini.pdf",
+        icon: "sparkles",
+    },
+
+    // Industry Training - Quick Heal Academy
+    {
+        id: "qh-digital-forensics",
+        title: "Certified Digital Forensics Investigator",
+        issuer: "Quick Heal Academy",
+        category: "industry-training",
+        skills: ["Digital Forensics", "Evidence Collection", "Investigation"],
+        fileName: "quickheal/certificate DF.pdf",
+        icon: "microscope",
+    },
+    {
+        id: "qh-mcis",
+        title: "Certified Managing Cloud Infrastructure and Security Analyst",
+        issuer: "Quick Heal Academy",
+        category: "industry-training",
+        skills: ["Cloud Infrastructure", "Cloud Security", "Security Analysis"],
+        fileName: "quickheal/certificate MCIS .pdf",
+        icon: "cloud",
+    },
+    {
+        id: "qh-network-security",
+        title: "Certified Network Security Analyst",
+        issuer: "Quick Heal Academy",
+        category: "industry-training",
+        skills: ["Network Security", "Security Analysis", "Threat Detection"],
+        fileName: "quickheal/certificate NAS.pdf",
+        icon: "shield",
+    },
+    {
+        id: "qh-ssas",
+        title: "Certified System and Server Security Analyst",
+        issuer: "Quick Heal Academy",
+        category: "industry-training",
+        skills: ["System Security", "Server Security", "Security Administration"],
+        fileName: "quickheal/certificate ssas.pdf",
+        icon: "settings",
+    },
+    {
+        id: "qh-vapt",
+        title: "Certified Vulnerability Assessment and Penetration Testing Analyst",
+        issuer: "Quick Heal Academy",
+        category: "industry-training",
+        skills: ["VAPT", "Vulnerability Assessment", "Penetration Testing"],
+        fileName: "quickheal/certificate vapt.pdf",
+        icon: "target",
+    },
+];
+
+export const categoryLabels: Record<Certification["category"], string> = {
+    cybersecurity: "Cybersecurity",
+    cloud: "Cloud Computing",
+    "ai-data": "AI & Data Science",
+    development: "Development",
+    "industry-training": "Industry Training",
+};
+
+export const categoryColors: Record<Certification["category"], string> = {
+    cybersecurity: "#2F80ED",
+    cloud: "#FF5C8A",
+    "ai-data": "#FFD400",
+    development: "#00B894",
+    "industry-training": "#AAAAAA",
+};
+
+export const categoryIcons: Record<Certification["category"], string> = {
+    cybersecurity: "shield",
+    cloud: "cloud",
+    "ai-data": "flaskConical",
+    development: "monitor",
+    "industry-training": "factory",
+};
